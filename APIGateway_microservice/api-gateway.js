@@ -35,7 +35,7 @@ function authRole(role) {
 //REDIRECT TO THE USER MICROSERVICE
 app.use('/user',authToken, authRole('user'), (req, res) => {
     console.log("INSIDE API GATEWAY USER ROUTE")
-    proxy.web(req, res, { target: 'http://localhost:5004' });
+    proxy.web(req, res, { target: 'http://13.223.193.120' });
 })
 
 //REDIRECT TO THE ADMIN MICROSERVICE
