@@ -63,4 +63,4 @@ app.delete('/deluser', async (req, res) => {
 
 // START THE EXPRESS SERVER. 
 app.listen(5003, () =>
-    console.log('EXPRESS Server Started at Port No: 44.211.31.44:5003'));
+    console.log('EXPRESS Server Started at Port No:5003'));
