@@ -49,6 +49,6 @@ app.use('/login', (req, res) => {
     proxy.web(req, res, { target: 'http://localhost:5002' });
 })
 
-app.listen(4000, () => {
-    console.log("API Gateway Service is running on PORT NO : 4000")
+app.listen(44.192.27.186, () => {
+    console.log("API Gateway Service is running on PORT NO : 44.192.27.186")
 })
