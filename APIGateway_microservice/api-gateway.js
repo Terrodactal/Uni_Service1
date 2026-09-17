@@ -46,12 +46,12 @@ app.use('/admin', authToken, authRole('admin'),(req, res) => {
 
 //REDIRECT TO THE LOGIN(Authentication) MICROSERVICE
 app.use('/login', (req, res) => {
-    proxy.web(req, res, { target: 'http://44.192.27.186:5002' });
+    proxy.web(req, res, { target: 'http://localhost:5002' });
 })
 
 //REDIRECT TO THE LOGIN(Authentication) MICROSERVICE
 app.use('/registration', (req, res) => {
-    proxy.web(req, res, { target: 'http://44.192.27.186:5001' });
+    proxy.web(req, res, { target: 'http://localhost:5001' });
 })
 
 app.listen(44.192.27.186:4000, () => {
