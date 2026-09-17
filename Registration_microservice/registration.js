@@ -68,4 +68,4 @@ app.post('/reg', async (req, res) => {
 });//CLOSE POST METHOD
 
 // START THE EXPRESS SERVER. 5001 is the PORT NUMBER
-app.listen(44.192.27.186, () => console.log('EXPRESS Server Started at Port No: 44.192.27.186'));
+app.listen(44.192.27.186:5001, () => console.log('EXPRESS Server Started at Port No: 44.192.27.186:5001'));
