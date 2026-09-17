@@ -56,6 +56,6 @@ app.post("/login", async (req, res) => {
     }
 });
 
-app.listen(5002, () => {
-    console.log('Authentication Service Server is running on PORT NO: 5002');
+app.listen(44.192.27.186, () => {
+    console.log('Authentication Service Server is running on PORT NO: 44.192.27.186');
 });
