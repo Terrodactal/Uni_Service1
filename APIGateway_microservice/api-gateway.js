@@ -35,25 +35,25 @@ function authRole(role) {
 //REDIRECT TO THE USER MICROSERVICE
 app.use('/user',authToken, authRole('user'), (req, res) => {
     console.log("INSIDE API GATEWAY USER ROUTE")
-    proxy.web(req, res, { target: 'http://13.223.193.120' });
+    proxy.web(req, res, { target: 'http://13.223.193.120:5004' });
 })
 
 //REDIRECT TO THE ADMIN MICROSERVICE
 app.use('/admin', authToken, authRole('admin'),(req, res) => {
     console.log("INSIDE API GATEWAY ADMIN ROUTE")
-    proxy.web(req, res, { target: 'http://44.211.31.44' });
+    proxy.web(req, res, { target: 'http://44.211.31.44:5003' });
 })
 
 //REDIRECT TO THE LOGIN(Authentication) MICROSERVICE
 app.use('/login', (req, res) => {
-    proxy.web(req, res, { target: 'http://44.192.27.186' });
+    proxy.web(req, res, { target: 'http://44.192.27.186:5002' });
 })
 
 //REDIRECT TO THE LOGIN(Authentication) MICROSERVICE
 app.use('/registration', (req, res) => {
-    proxy.web(req, res, { target: 'http://44.192.27.186' });
+    proxy.web(req, res, { target: 'http://44.192.27.186:5001' });
 })
 
-app.listen(44.192.27.186, () => {
-    console.log("API Gateway Service is running on PORT NO : 44.192.27.186")
+app.listen(44.192.27.186:4000, () => {
+    console.log("API Gateway Service is running on PORT NO : 44.192.27.186:4000")
 })
