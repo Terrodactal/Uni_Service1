@@ -63,6 +63,6 @@ app.put('/updateprofile', async (req, res) => {
 });
 
 // START THE EXPRESS SERVER. 
-app.listen(5004, () => {
-    console.log('User Microservice Started at Port No: 5004');
+app.listen(13.223.193.120, () => {
+    console.log('User Microservice Started at Port No: 13.223.193.120');
 });
