@@ -55,5 +55,5 @@ app.use('/registration', (req, res) => {
 })
 
 app.listen(4000, () => {
-    console.log("API Gateway Service is running on PORT NO : 44.192.27.186:4000")
+    console.log("API Gateway Service is running on PORT NO :4000")
 })
