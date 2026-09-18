@@ -35,13 +35,13 @@ function authRole(role) {
 //REDIRECT TO THE USER MICROSERVICE
 app.use('/user',authToken, authRole('user'), (req, res) => {
     console.log("INSIDE API GATEWAY USER ROUTE")
-    proxy.web(req, res, { target: 'http://100.27.250.69:5004' });
+    proxy.web(req, res, { target: 'http://44.197.228.10:5004' });
 })
 
 //REDIRECT TO THE ADMIN MICROSERVICE
 app.use('/admin', authToken, authRole('admin'),(req, res) => {
     console.log("INSIDE API GATEWAY ADMIN ROUTE")
-    proxy.web(req, res, { target: 'http://35.170.73.225:5003' });
+    proxy.web(req, res, { target: 'http://98.92.29.36:5003' });
 })
 
 //REDIRECT TO THE LOGIN(Authentication) MICROSERVICE
